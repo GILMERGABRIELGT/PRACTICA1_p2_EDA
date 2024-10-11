@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprobados y Reprobados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Alumnos</h1>
+        <form id="studentForm">
+            <label for="studentName">Nombre del Alumno:</label>
+            <input type="text" id="studentName" required>
+
+            <label for="studentGrade">Calificación:</label>
+            <input type="number" id="studentGrade" min="0" max="10" required>
+
+            <button type="submit">Agregar Alumno</button>
+        </form>
+
+        <div class="lists-container">
+            <div>
+                <h2>Alumnos Aprobados</h2>
+                <ul id="approvedStudents"></ul>
+            </div>
+            <div>
+                <h2>Alumnos Reprobados</h2>
+                <ul id="failedStudents"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
